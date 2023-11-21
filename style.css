@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+body {
+  margin: 0;
+}
+
+p,
+li,
+.logo-text,
+.hero-text,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 1. Header */
 ul {
   list-style-type: none;
   margin: 0;
@@ -8,3 +23,67 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.hero-text {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+.logo-text {
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+li,
+p {
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #1F2937;
+  padding: 20px 15%;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .navbar ul {
+  display: flex;
+  gap: 20px
+}
+
+button {
+  background-color: #3882F6;
+  border: 2px solid #3882F6;
+  color: #E5E7EB;
+  padding: 8px 32px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header .body {
+  display: flex;
+  padding: 120px 0;
+}
+
+.header .body .content {
+  flex: 2 1 0;
+}
+
+.header .body .media {
+  display: flex;
+  justify-content: end;
+
+  flex: 3 1 0;
+}
+
+/* 2. Info */
