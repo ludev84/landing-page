@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
 body {
   margin: 0;
@@ -6,6 +6,9 @@ body {
 
 p,
 li,
+q,
+h2,
+footer,
 .logo-text,
 .hero-text,
 button {
@@ -42,7 +45,7 @@ p {
   font-size: 18px;
 }
 
-.header {
+body > .header {
   display: flex;
   flex-direction: column;
 
@@ -87,3 +90,114 @@ button {
 }
 
 /* 2. Info */
+.information {
+  background-color: white;
+  padding: 20px 18%;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+
+  padding-bottom: 76px;
+}
+
+.cards img {
+  width: 175px;
+  height: auto;
+  border: solid #3882F6;
+  border-radius: 16px;
+}
+
+.info-card {
+  flex: 0 0 0;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.info-card p {
+  color: #1F2937;
+}
+
+.information .header {
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  color: #1F2937;
+  text-align: center;
+  font-weight: 900;
+  padding: 32px 0;
+}
+
+/* 3. Quote */
+.quote {
+  padding: 120px 30%;
+  background-color: #E5E7EB;
+}
+
+.quote .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+q {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote p {
+  text-align: end;
+  color: #1F2937;
+  font-weight: 600;
+  margin: 12px 0 0;
+}
+
+/* 4. CTA */
+
+.cta {
+  background-color: white;
+  padding: 70px 15%;
+}
+
+.cta .body {
+  display: flex;
+
+  background-color: #3882F6;
+  border-radius: 8px;
+  padding: 50px 120px;
+}
+
+.cta .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+}
+
+.cta button {
+  flex: 0 1 auto;
+}
+
+.cta h2,
+.cta p {
+  margin: 0;
+}
+
+.cta h2 {
+  color: #F9FAF8;
+  font-weight: 500;
+}
+
+.cta button {
+  border: 2px solid #F9FAF8;
+}
+
+/* Footer */
+footer {
+  padding: 36px 0;
+  text-align: center;
+  background-color: #1F2937;
+  color: #E5E7EB;
+}
