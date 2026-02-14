@@ -56,6 +56,9 @@ body > .header {
 .header .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
 }
 
 .header .navbar ul {
@@ -75,16 +78,20 @@ button {
 
 .header .body {
   display: flex;
+  align-items: center;
   padding: 120px 0;
+  gap: 20px;
 }
 
 .header .body .content {
   flex: 2 1 0;
 }
 
-.header .body .media {
+.header .body img {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  max-width: 630px;
+  max-height: 286px;
 
   flex: 3 1 0;
 }
@@ -98,6 +105,7 @@ button {
 .cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 48px;
 
   padding-bottom: 76px;
@@ -118,7 +126,7 @@ button {
 }
 
 .info-card p {
-  color: #1F2937;
+  color: #767676;
 }
 
 .information .header {
@@ -164,10 +172,13 @@ q {
 
 .cta .body {
   display: flex;
+  align-items: center;
+  gap: 16px;
 
   background-color: #3882F6;
-  border-radius: 8px;
-  padding: 50px 120px;
+  min-width: 240px;
+  border-radius: 20px;
+  padding: 40px 80px;
 }
 
 .cta .content {
